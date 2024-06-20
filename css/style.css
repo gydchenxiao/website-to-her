@@ -13,6 +13,14 @@ h1 {
   margin-top: 10px;
 }
 
+.container4{
+  display: flex;
+  justify-content: space-between;
+}
+
+.no {
+}
+
 
 .container1 {
   display: flex;
@@ -45,7 +53,7 @@ h1 {
 
 .first-line {
   color: rgb(255, 0, 144);
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .second-line {
@@ -58,6 +66,9 @@ h1 {
 
 .last-line {
   color: yellow;
+}
+
+.note{
 }
 
 .container2 {
@@ -121,4 +132,5 @@ h1 {
   margin-top: 20px;
   font-weight: 900;
 }
+
 
