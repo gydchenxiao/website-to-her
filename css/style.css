@@ -97,6 +97,7 @@ h1 {
   border-radius: 20px; /* 圆角 */
   cursor: pointer;  /* 鼠标样式 */
   margin-top: 80px;
+  font-weight: 900;
 }
 
 #musicButton {
@@ -107,6 +108,7 @@ h1 {
   border-radius: 20px;
   cursor: pointer;
   margin-top: 20px;
+  font-weight: 900;
 }
 
 #nextPageButton {
@@ -117,5 +119,6 @@ h1 {
   border-radius: 20px;
   cursor: pointer;
   margin-top: 20px;
+  font-weight: 900;
 }
 
