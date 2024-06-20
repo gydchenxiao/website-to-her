@@ -1,0 +1,121 @@
+body {
+  background-size: cover;
+  /* 背景图片尺寸覆盖整个屏幕 */
+  padding: 20px;
+  /* 设置网页内容与边界的间距 */
+  background-image: url(../img/background1.png);
+  /* 设置初始背景图片 */
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  margin-top: -30px;
+  
+}
+
+.message {
+  width: 400px;
+  padding: 30px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: rgba(250, 248, 248, 0.044);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  /* 将卡片在垂直方向上向下移动一定距离 */
+}
+
+.content {
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 1.5em; /* 设置行高,即行间距 */
+}
+
+.first-line {
+  color: rgb(255, 0, 144);
+  font-weight: bolder;
+}
+
+.second-line {
+  color: white;
+}
+
+.sixth-line {
+  color: yellow;
+}
+
+.last-line {
+  color: yellow;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.container3{
+
+}
+
+.aplayer {
+  border-radius: 10px;  /* 可选：圆角效果 */
+  padding: 20px;/* 可选：内边距 */
+  width: 400px;
+  height: 200px;
+}
+
+
+
+.button-contianer {
+  position: fixed; /* 固定位置 */
+  bottom: 20px; /* 距离底部的距离，可调整 */
+  right: 20px;/* 距离右侧的距离，可调整 */
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* 按钮间的间隔 */
+}
+
+
+#changeBg {
+  background-color: rgba(249, 127, 147, 0.645);/* 背景色 */
+  color: white; /* 文字颜色 */
+  padding: 10px 20px; /* 内边距 */
+  border: none; /* 去掉边框 */
+  border-radius: 20px; /* 圆角 */
+  cursor: pointer;  /* 鼠标样式 */
+  margin-top: 80px;
+}
+
+#musicButton {
+  background-color: rgba(249, 127, 147, 0.645);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#nextPageButton {
+  background-color: rgba(249, 127, 147, 0.645);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
