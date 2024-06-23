@@ -56,11 +56,15 @@ h1 {
   font-weight: 900;
 }
 
+.second-line {
+  color: white;
+}
+
 .third-line {
   color: rgb(255, 0, 144);
   font-weight: 900;
 }
-  
+
 .sixth-line {
   color: yellow;
 }
@@ -133,5 +137,3 @@ h1 {
   margin-top: 20px;
   font-weight: 900;
 }
-
-
