@@ -61,31 +61,7 @@
     <button id="musicButton">音乐</button>
     <button id="nextPageButton">下一页</button>
   </div>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var bgImages = [
-        "url(./img/background1.png)",
-        "url(./img/background2.webp)",
-        "url(./img/background3.jpg)",
-        "url(./img/background4.png)",
-        "url(./img/background5.jpg)",
-        "url(./img/background6.jpg)",
-        "url(./img/background7.jpg)",
-      ];
-
-      var currentIndex = 0;
-
-      function changeBackgroundImage() {
-        currentIndex = (currentIndex + 1) % bgImages.length;
-        document.body.style.backgroundImage = bgImages[currentIndex];
-      }
-
-      // 给ID为changeBg的元素绑定点击事件
-      document
-        .getElementById("changeBg")
-        .addEventListener("click", changeBackgroundImage);
-    });
-  </script>
+  
   <script type="text/javascript" src="./js/music.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
