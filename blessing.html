@@ -7,20 +7,19 @@
   <title>给陈晓の祝福</title>
   <link rel="icon" href="./img/chenxiaoQQ.jpg" />
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/iziToast.min.css" />
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_8d5l8fzk5b87iudi.css" />
   <!-- 引入 APlayer 库 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
-  <script src="./js/color-thief.js"></script>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/APlayer.min.css">
 </head>
 
 <body>
   <h1>Wish Chen xiao no worries every day sincerely</h1>
   <br />
-  <div class="container4">
-    <div class="no">
+  <div class="container1">
+    <div class="none">
     </div>
-    <div class="container1" title="我很高兴认识你,陈晓">
+    <div class="container2" title="我很高兴认识你,陈晓">
       <div class="message">
         <div class="content">
           <p>
@@ -44,25 +43,21 @@
     <div class="note">
     </div>
   </div>
+
+  <br />
   <br />
 
-  <div class="container2">
-    <div class="none">
-    </div>
-    <div class="container3">
-      <div class="aplayer" id="aplayer">
-      </div>
-    </div>
-    <div class="nothing">
-    </div>
+  <div class="container3">
+    <div id="aplayer"></div>
   </div>
+
   <div class="button-contianer">
     <button id="changeBg">更换背景</button>
     <button id="musicButton">音乐</button>
     <button id="nextPageButton">下一页</button>
   </div>
 
-    <script>
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
       var bgImages = [
         "url(./img/background1.png)",
@@ -75,7 +70,6 @@
       ];
 
       var currentIndex = 0;
-
       function changeBackgroundImage() {
         currentIndex = (currentIndex + 1) % bgImages.length;
         document.body.style.backgroundImage = bgImages[currentIndex];
@@ -87,7 +81,9 @@
         .addEventListener("click", changeBackgroundImage);
     });
   </script>
-  <script type="text/javascript" src="./js/music.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/APlayer.min.js"></script>
+  <script src="./js/music.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
