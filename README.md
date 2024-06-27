@@ -1,6 +1,6 @@
 ## 一个写给chenxiao的祝福的小网页
 
-1.访问地址：https://gudong1012.github.io/blessings-to-her-web/blessing.html
+1.访问地址：https://gudong1012.github.io/blessingwebsite-to-her/blessing.html
 
 2.效果图
 
