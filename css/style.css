@@ -13,16 +13,16 @@ h1 {
   margin-top: 10px;
 }
 
-.container4{
+.container1{
   display: flex;
   justify-content: space-between;
 }
 
-.no {
+.none {
 }
 
 
-.container1 {
+.container2 {
   display: flex;
   justify-content: center;
   /* 水平居中 */
@@ -73,27 +73,16 @@ h1 {
   color: yellow;
 }
 
-.note{
+.contianer3{
+  display: none;
 }
 
-.container2 {
-  display: flex;
-  justify-content: space-between;
+#aplayer {
+  width: 430px; /* 设置播放器宽度为100% */
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
 }
-
-
-.container3{
-
-}
-
-.aplayer {
-  border-radius: 10px;  /* 可选：圆角效果 */
-  padding: 20px;/* 可选：内边距 */
-  width: 400px;
-  height: 200px;
-}
-
-
 
 .button-contianer {
   position: fixed; /* 固定位置 */
