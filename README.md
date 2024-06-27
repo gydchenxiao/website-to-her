@@ -6,7 +6,10 @@
 
 
 首先是首页
-![首页](https://s21.ax1x.com/2024/06/20/pkDS0Qf.jpg)
+
+![首页1](https://s21.ax1x.com/2024/06/27/pkyT7WT.png）
+
+![首页2](https://s21.ax1x.com/2024/06/20/pkDS0Qf.jpg)
 
 
 其次是音乐播放器
