@@ -1,4 +1,4 @@
-### 一个写给chenxiao的祝福的小网页
+### 一个写给金城里一个叫chenxiao的女生的祝福的小网页
 
 1.访问地址：https://gudong1012.github.io/blessingwebsite-to-her/blessing.html
 
