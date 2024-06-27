@@ -1,27 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var bgImages = [
-      "url(./img/background1.png)",
-      "url(./img/background2.webp)",
-      "url(./img/background3.jpg)",
-      "url(./img/background4.png)",
-      "url(./img/background5.jpg)",
-      "url(./img/background6.jpg)",
-      "url(./img/background7.jpg)",
-    ];
-
-    var currentIndex = 0;
-
-    function changeBackgroundImage() {
-      currentIndex = (currentIndex + 1) % bgImages.length;
-      document.body.style.backgroundImage = bgImages[currentIndex];
-    }
-
-    // 给ID为changeBg的元素绑定点击事件
-    document
-      .getElementById("changeBg")
-      .addEventListener("click", changeBackgroundImage);
-  });
-  
 // 通过JavaScript为按钮添加点击事件监听器
 document.getElementById("nextPageButton").addEventListener("click", function()  // 当按钮被点击时，导航到指定的HTML文件
 {     
