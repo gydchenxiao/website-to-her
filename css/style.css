@@ -57,7 +57,8 @@ h1 {
 }
 
 .second-line {
-  color: white;
+  color: rgb(255, 0, 144);
+  font-weight: 900;
 }
 
 .third-line {
