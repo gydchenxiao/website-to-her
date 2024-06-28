@@ -32,18 +32,15 @@ h1 {
   
 }
 
-.message {
+.content {
   width: 400px;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #f0f0f0;
   border-radius: 10px;
   background-color: rgba(250, 248, 248, 0.044);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   /* 将卡片在垂直方向上向下移动一定距离 */
-}
-
-.content {
   text-align: center;
   color: white;
   font-weight: bolder;
@@ -79,7 +76,7 @@ h1 {
 }
 
 #aplayer {
-  width: 430px; /* 设置播放器宽度为100% */
+  width: 420px; 
   margin: 0 auto;
   border-radius: 10px;
   padding: 20px;
