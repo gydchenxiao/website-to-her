@@ -93,7 +93,7 @@ h1 {
 
 
 #changeBg {
-  background-color: rgba(249, 127, 147, 0.645);/* 背景色 */
+  background-color: rgba(249, 127, 147, 0.445);/* 背景色 */
   color: white; /* 文字颜色 */
   padding: 10px 20px; /* 内边距 */
   border: none; /* 去掉边框 */
@@ -104,7 +104,7 @@ h1 {
 }
 
 #musicButton {
-  background-color: rgba(249, 127, 147, 0.645);
+  background-color: rgba(249, 127, 147, 0.445);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -115,7 +115,7 @@ h1 {
 }
 
 #nextPageButton {
-  background-color: rgba(249, 127, 147, 0.645);
+  background-color: rgba(249, 127, 147, 0.445);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -123,4 +123,13 @@ h1 {
   cursor: pointer;
   margin-top: 20px;
   font-weight: 900;
+}
+
+#changeBg:hover,
+#musicButton:hover,
+#nextPageButton:hover,
+#changeBg:active,
+#musicButton:active,
+#nextPageButton:active {
+  background-color: rgb(239, 129, 145); /* 按钮激活时的背景色 */
 }
