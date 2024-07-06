@@ -75,12 +75,9 @@ h1 {
 }
 
 .button-contianer {
-  position: fixed; /* 固定位置 */
-  bottom: 20px; /* 距离底部的距离，可调整 */
-  right: 20px;/* 距离右侧的距离，可调整 */
   display: flex;
-  flex-direction: column;
-  gap: 5px; /* 按钮间的间隔 */
+  justify-content: center;
+  gap: 7px; /* 按钮间的间隔 */
 }
 
 
@@ -91,8 +88,9 @@ h1 {
   border: none; /* 去掉边框 */
   border-radius: 20px; /* 圆角 */
   cursor: pointer;  /* 鼠标样式 */
-  margin-top: 80px;
   font-weight: 900;
+  width: 95px; /* 设置按钮宽度 */
+  height: 40px; /* 设置按钮高度 */
 }
 
 #musicButton {
@@ -102,8 +100,9 @@ h1 {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 20px;
   font-weight: 900;
+  width: 95px; 
+  height: 40px; 
 }
 
 #nextPageButton {
@@ -113,8 +112,9 @@ h1 {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  margin-top: 20px;
   font-weight: 900;
+  width: 95px; 
+  height: 40px;
 }
 
 #changeBg:hover,
@@ -125,3 +125,4 @@ h1 {
 #nextPageButton:active {
   background-color: rgb(239, 129, 145); /* 按钮激活时的背景色 */
 }
+
