@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px) {
   body {  
-   background-size: cover;   
+   background-size: cover;  
    /* 背景图片尺寸覆盖整个屏幕 */   
    background-image: url("https://s21.ax1x.com/2024/07/06/pkWFfo9.jpg");  
    /* 设置初始背景图片 */  
