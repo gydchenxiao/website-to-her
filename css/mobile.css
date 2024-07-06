@@ -4,7 +4,6 @@
    /* 背景图片尺寸覆盖整个屏幕 */   
    background-image: url("https://s21.ax1x.com/2024/07/06/pkWFfo9.jpg");  
    /* 设置初始背景图片 */  
-   padding: 10px; /* 设置页面边距 */ 
    }
 }
 
@@ -13,15 +12,6 @@ h1 {
   color: white;
   margin-top: 30px;
 }
-
-.container1{
-  display: flex;
-  justify-content: space-between;
-}
-
-.none {
-}
-
 
 .container2 {
   display: flex;
