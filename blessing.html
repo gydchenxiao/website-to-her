@@ -59,7 +59,7 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var bgImages = [
+      var bgImagesDesktop = [
         "url('https://s21.ax1x.com/2024/06/29/pk6TScF.png')",
         "url('https://s21.ax1x.com/2024/06/29/pk6TPB9.webp')",
         "url('https://s21.ax1x.com/2024/06/29/pk6Te1O.png')",
@@ -68,12 +68,20 @@
         "url('https://s21.ax1x.com/2024/06/29/pk6TMBd.jpg')",
       ];
 
+      var bgImagesMobile = [
+        "url('https://s21.ax1x.com/2024/07/06/pkWFfo9.jpg')",
+        "url('https://s21.ax1x.com/2024/07/06/pkWFLee.webp')",
+        "url('https://s21.ax1x.com/2024/07/06/pkWFOdH.webp')",
+        "url('https://s21.ax1x.com/2024/07/06/pkWFvFA.webp')",
+        "url('https://s21.ax1x.com/2024/07/06/pkWFxJI.webp')",
+      ];
+      
       var currentIndex = 0;
       function changeBackgroundImage() {
-        currentIndex = (currentIndex + 1) % bgImages.length;
-        document.body.style.backgroundImage = bgImages[currentIndex];
-      }
-
+       var bgImages = window.innerWidth > 600 ? bgImagesDesktop : bgImagesMobile;
+       currentIndex = (currentIndex + 1) % bgImages.length;
+       document.body.style.backgroundImage = bgImages[currentIndex];
+  }
       // 给ID为changeBg的元素绑定点击事件
       document
         .getElementById("changeBg")
