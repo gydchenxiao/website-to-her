@@ -24,7 +24,7 @@ h1 {
 }
 
 .content {
-  width: 380px;
+  width: 420px;
   padding: 20px;
   border: 1px solid #f0f0f0;
   border-radius: 10px;
@@ -35,8 +35,8 @@ h1 {
   text-align: center;
   color: white;
   font-weight: bolder;
-  font-size: 14px;
-  line-height: 1.2em; /* 设置行高,即行间距 */
+  font-size: 17px;
+  line-height: 1.4em; /* 设置行高,即行间距 */
 }
 
 .first-line {
