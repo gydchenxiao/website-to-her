@@ -1,1 +1,11 @@
-
+@media (max-width: 600px) {
+ body {
+  background-size: cover;
+  /* 背景图片尺寸覆盖整个屏幕 */
+  background-image: url("https://s21.ax1x.com/2024/06/29/pk6TScF.png");
+  /* 设置初始背景图片 */
+  background-repeat: no-repeat;
+  background-position: center center; /* 确保图片居中 */
+  background-size: 100% auto; /* 调整图片大小以适应宽度 */
+ }
+}
