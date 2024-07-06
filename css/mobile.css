@@ -64,6 +64,9 @@ h1 {
 
 .contianer3{
   display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #aplayer {
