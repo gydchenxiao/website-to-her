@@ -1,126 +1,128 @@
+@media only screen and (min-width: 769px) {
+  body {
+    background-size: cover;
+    /* 背景图片尺寸覆盖整个屏幕 */
+    background-image: url("https://s21.ax1x.com/2024/06/29/pk6TScF.png");
+    /* 设置初始背景图片 */
 
- body {
-  background-size: cover;
-  /* 背景图片尺寸覆盖整个屏幕 */
-  background-image: url("https://s21.ax1x.com/2024/06/29/pk6TScF.png");
-  /* 设置初始背景图片 */
- }
+    h1 {
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+    }
 
+    .container2 {
+      display: flex;
+      justify-content: center;
+      /* 水平居中 */
+      align-items: center;
+      /* 垂直居中 */
+      margin-top: -30px;
+    }
 
-h1 {
-  text-align: center;
-  color: white;
-  margin-top: 30px;
-}
+    .content {
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #f0f0f0;
+      border-radius: 10px;
+      background-color: rgba(250, 248, 248, 0.044);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 10px;
+      /* 将卡片在垂直方向上向下移动一定距离 */
+      text-align: center;
+      color: white;
+      font-weight: bolder;
+      font-size: 17px;
+      line-height: 1.4em; /* 设置行高,即行间距 */
+    }
 
-.container2 {
-  display: flex;
-  justify-content: center;
-  /* 水平居中 */
-  align-items: center;
-  /* 垂直居中 */
-  margin-top: -30px;
-  
-}
+    .first-line {
+      color: white;
+      font-weight: 900;
+    }
 
-.content {
-  width: 330px;
-  padding: 20px;
-  border: 1px solid #f0f0f0;
-  border-radius: 10px;
-  background-color: rgba(250, 248, 248, 0.044);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-  /* 将卡片在垂直方向上向下移动一定距离 */
-  text-align: center;
-  color: white;
-  font-weight: bolder;
-  font-size: 17px;
-  line-height: 1.4em; /* 设置行高,即行间距 */
-}
+    .second-line {
+      color: rgb(255, 0, 144);
+      font-weight: 900;
+    }
 
-.first-line {
-  color: white;
-  font-weight: 900;
-}
+    .third-line {
+      color: rgb(255, 0, 144);
+      font-weight: 900;
+    }
 
-.second-line {
-  color: rgb(255, 0, 144);
-  font-weight: 900;
-}
+    .sixth-line {
+      color: yellow;
+    }
 
-.third-line {
-  color: rgb(255, 0, 144);
-  font-weight: 900;
-}
+    .last-line {
+      color: yellow;
+    }
 
-.sixth-line {
-  color: yellow;
-}
+    .contianer3 {
+      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.last-line {
-  color: yellow;
-}
+    #aplayer {
+      width: 400px;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 20px;
+    }
 
-.contianer3{
-  display: none;
-}
+    .button-contianer {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
-#aplayer {
-  width: 330px; 
-  margin: 0 auto;
-  border-radius: 10px;
-  padding: 20px;
-}
+    #changeBg {
+      background-color: rgba(249, 127, 147, 0.445); /* 背景色 */
+      color: white; /* 文字颜色 */
+      padding: 10px 20px; /* 内边距 */
+      border: none; /* 去掉边框 */
+      border-radius: 20px; /* 圆角 */
+      cursor: pointer; /* 鼠标样式 */
+      font-weight: 900;
+      width: 95px;
+      height: 40px;
+    }
 
-.button-contianer {
-  display: flex;
-  justify-content: center;
-  gap: 7px; /* 按钮间的间隔 */
-}
+    #musicButton {
+      background-color: rgba(249, 127, 147, 0.445);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 900;
+      width: 95px;
+      height: 40px;
+    }
 
+    #nextPageButton {
+      background-color: rgba(249, 127, 147, 0.445);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 900;
+      width: 95px;
+      height: 40px;
+    }
 
-#changeBg {
-  background-color: rgba(249, 127, 147, 0.445);/* 背景色 */
-  color: white; /* 文字颜色 */
-  padding: 10px 20px; /* 内边距 */
-  border: none; /* 去掉边框 */
-  border-radius: 20px; /* 圆角 */
-  cursor: pointer;  /* 鼠标样式 */
-  font-weight: 900;
-  width: 95px; /* 设置按钮宽度 */
-  height: 40px; /* 设置按钮高度 */
-}
-
-#musicButton {
-  background-color: rgba(249, 127, 147, 0.445);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 900;
-  width: 95px; 
-  height: 40px; 
-}
-
-#nextPageButton {
-  background-color: rgba(249, 127, 147, 0.445);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 900;
-  width: 95px; 
-  height: 40px;
-}
-
-#changeBg:hover,
-#musicButton:hover,
-#nextPageButton:hover,
-#changeBg:active,
-#musicButton:active,
-#nextPageButton:active {
-  background-color: rgb(239, 129, 145); /* 按钮激活时的背景色 */
+    #changeBg:hover,
+    #musicButton:hover,
+    #nextPageButton:hover,
+    #changeBg:active,
+    #musicButton:active,
+    #nextPageButton:active {
+      background-color: rgb(239, 129, 145); /* 按钮激活时的背景色 */
+    }
+  }
 }
