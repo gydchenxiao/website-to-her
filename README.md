@@ -2,7 +2,7 @@
 
 1.访问地址：https://gudong1012.github.io/blessingwebsite-to-her/blessing.html
 
-2.效果图
+2.效果图 背景图片用的国内公益图床，挂代理大概背景图片加载不出来。[路过图床](https://imgse.com/)
 
 
 #### 首先是首页
