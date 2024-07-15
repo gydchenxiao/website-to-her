@@ -1,4 +1,4 @@
-### 写给金城学院商学院里英语专业里一个叫chenxiao的女孩的小网页
+### 写给金城学院商学院里英语专业的一个叫chenxiao的女孩的小网页
 
 1.访问地址：https://gudong1012.github.io/blessingwebsite-to-her/blessing.html
 
