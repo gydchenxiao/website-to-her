@@ -7,15 +7,15 @@
 
 #### 首先是首页
 
-![首页1](https://s21.ax1x.com/2024/06/27/pkyT7WT.png)
+![首页1](https://s2.loli.net/2024/07/15/MYHQr7KiuNIe2R8.jpg)
 
 
-![首页2](https://s21.ax1x.com/2024/06/20/pkDS0Qf.jpg)
+![首页2](https://s2.loli.net/2024/07/15/lUaweTmJ3qIABtY.jpg)
 
 
-#### 其次是音乐播放器
-![音乐播放器](https://s21.ax1x.com/2024/06/20/pkDSDOS.jpg)
+#### 音乐播放器
+![音乐播放器](https://s2.loli.net/2024/07/15/lUaweTmJ3qIABtY.jpg)
 
 
 #### 最后跳转到下一页
-![下一页](https://s21.ax1x.com/2024/06/20/pkDSseg.jpg)
+![下一页](https://s2.loli.net/2024/07/15/hNQKgCYBRqTeyZE.jpg)
