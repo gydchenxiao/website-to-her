@@ -7,10 +7,7 @@
 
 #### 首先是首页
 
-![首页1](https://s2.loli.net/2024/07/15/MYHQr7KiuNIe2R8.jpg)
-
-
-![首页2](https://s2.loli.net/2024/07/15/lUaweTmJ3qIABtY.jpg)
+![首页1](https://s2.loli.net/2024/07/15/lUaweTmJ3qIABtY.jpg)
 
 
 #### 音乐播放器
