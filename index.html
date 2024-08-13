@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>写给陈晓の</title>
+  <link rel="icon" href="./img/chenxiaoQQ.jpg" />
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_8d5l8fzk5b87iudi.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <!-- 引入 APlayer 库 -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/APlayer.min.css">
+</head>
+
+<body>
+  <h1>Wish Chen xiao no worries every day sincerely</h1>
+  <br />
+  
+    <div class="container2" title="我很高兴认识你,陈晓">
+        <div class="content">
+          <p>
+            <span class="first-line">"我希望陈晓你每天可以开开心心"</span>
+            <br />
+            <span class="second-line">"我的告别,也许明年就不在学校了"</span>
+            <br />
+            <span class="third-line">"再也不会打扰你了,只是对你有一些好感"</span>
+            <br />
+            <span>"上次邮件轰炸我先拿我自己邮箱做的试验"</span>
+            <br />
+            <span>"代理软件和我自建的节点给你用感觉挺好"</span>
+            <br />
+            <span class="sixth-line">"我会改正身上的缺点,以后不会烦人和恼怒"</span>
+            <br />
+            <span class="last-line">"人生若只如初见，何事悲风秋画扇"</span>
+          </p>
+        </div>
+    </div>
+
+  <br />
+
+  <div class="container3">
+    <div id="aplayer"></div>
+  </div>
+
+  <br />
+  <div class="button-contianer">
+    <button id="changeBg">更换背景</button>
+    <button id="musicButton">音乐</button>
+    <button id="nextPageButton">下一页</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var bgImagesDesktop = [
+        "url('https://pic.imgdb.cn/item/66adfcc8d9c307b7e9a68764.png')",
+        "url('https://pic.imgdb.cn/item/66adfc9fd9c307b7e9a66941.jpg')",
+        "url('https://s2.loli.net/2024/07/17/VWQM5gjEUlziJK7.png')",
+        "url('https://s2.loli.net/2024/07/17/1GuBJvPeUlgYZ5D.jpg')",
+        "url('https://s2.loli.net/2024/07/17/1UV47PorzaS92nG.jpg')",
+        "url('https://s2.loli.net/2024/07/17/sgx47fLrlIGXjA5.jpg')",
+      ];
+
+      var bgImagesMobile = [
+        "url('https://pic.imgdb.cn/item/66adfd0cd9c307b7e9a6bd94.jpg')",
+        "url('https://pic.imgdb.cn/item/66adfd31d9c307b7e9a6d852.webp')",
+        "url('https://s2.loli.net/2024/07/17/4Sig9BGaT8ZC5NU.webp')",
+        "url('https://s2.loli.net/2024/07/17/3zjLkTR1Uf2t9qp.webp')",
+        "url('https://s2.loli.net/2024/07/17/lirZHUjmLW5T6gM.webp')",
+      ];
+      
+      var currentIndex = 0;
+      function changeBackgroundImage() {
+       var bgImages = window.innerWidth > 600 ? bgImagesDesktop : bgImagesMobile;
+       currentIndex = (currentIndex + 1) % bgImages.length;
+       document.body.style.backgroundImage = bgImages[currentIndex];
+  }
+      // 给ID为changeBg的元素绑定点击事件
+      document
+        .getElementById("changeBg")
+        .addEventListener("click", changeBackgroundImage);
+    });
+  </script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/APlayer.min.js"></script>
+  <script src="./js/music.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>
