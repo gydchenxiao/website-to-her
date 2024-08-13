@@ -7,8 +7,8 @@ body {
   height: 100%;
   background-image: url("https://pic.imgdb.cn/item/66bb7032d9c307b7e935d2b3.jpg"); /* 更换为你的图片路径, ..是上一级目录 */
   background-size: cover; /* 图片覆盖整个容器 */
-/*   background-position: center; /* 图片居中显示 */
-  background-repeat: no-repeat; /* 确保图片不重复 */ */
+  background-position: center; /* 图片居中显示 */
+  background-repeat: no-repeat; /* 确保图片不重复 */
 }
 
 #canvas {
