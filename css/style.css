@@ -5,6 +5,7 @@
     background-image: url("https://pic.imgdb.cn/item/66adfcc8d9c307b7e9a68764.png");
     /* 设置初始背景图片 */
     overflow:hidden;
+  }
 
     h1 {
       text-align: center;
@@ -125,5 +126,4 @@
     #nextPageButton:active {
       background-color: rgb(239, 129, 145); /* 按钮激活时的背景色 */
     }
-  }
 }
