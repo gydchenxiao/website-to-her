@@ -4,6 +4,7 @@
     /* 背景图片尺寸覆盖整个屏幕 */
     background-image: url("https://pic.imgdb.cn/item/66adfcc8d9c307b7e9a68764.png");
     /* 设置初始背景图片 */
+    overflow:hidden;
 
     h1 {
       text-align: center;
