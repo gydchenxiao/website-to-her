@@ -1,1 +1,100 @@
+@media only screen and (max-width: 768px) {
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 阻止页面出现滚动条 */
+  width: 100%;
+  height: 100%;
+  background-image: url("https://pic.imgdb.cn/item/66bdf6a4d9c307b7e98ef350.jpg"); /* 更换为你的图片路径, ..是上一级目录 */
+  background-size: cover; /* 图片覆盖整个容器 */
+  background-position: center; /* 图片居中显示 */
+  background-repeat: no-repeat; /* 确保图片不重复 */
+}
 
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* 使用绝对定位让canvas覆盖在背景图片上 */
+  top: 0;
+  left: 0;
+  z-index: 1; /* 确保canvas在最上层 */
+}
+
+.text1 {
+  font-size: 10px;
+  color: blanchedalmond;
+  text-align: center;
+  position: relative;
+  top: 40px;
+  -webkit-animation: ani 5s ease-in-out infinite;
+}
+
+.text2 {
+  font-size: 10px;
+  color: blanchedalmond;
+  text-align: center;
+  position: relative;
+  top: 80px;
+  -webkit-animation: ani 4s ease-in-out infinite;
+}
+
+.text3 {
+  font-size: 10px;
+  color: blanchedalmond;
+  text-align: center;
+  position: relative;
+  top: 120px;
+  -webkit-animation: ani 4s ease-in-out infinite;
+}
+
+.text4 {
+  font-size: 10px;
+  color: blanchedalmond;
+  text-align: center;
+  position: relative;
+  top: 160px;
+  -webkit-animation: ani 4s ease-in-out infinite;
+}
+
+.text5{
+  font-size: 10px;
+  color: blanchedalmond;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  -webkit-animation: ani 4s ease-in-out infinite;
+}
+
+.text6 {
+  font-size: 10px;
+  color: blanchedalmond;
+  text-align: center;
+  position: relative;
+  top: 240px;
+  -webkit-animation: ani 4s ease-in-out infinite;
+}
+/*过渡动画*/
+@keyframes ani {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#lastPageButton {
+  background-color: rgba(249, 127, 147, 0.645);
+  color: white;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 10px;
+  position: fixed; /*固定定位（fixed positioning）：固定定位是相对于浏览器窗口的位置进行定位。按钮将始终保持在视口的相同位置，不会随页面滚动而移动。*/
+  right: 10px;
+  bottom: 30px;
+}
+}
