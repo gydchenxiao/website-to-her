@@ -1,4 +1,4 @@
-html,
+@media only screen and (min-width:769px) { 
 body {
   margin: 0;
   padding: 0;
@@ -96,4 +96,5 @@ body {
   position: fixed; /*固定定位（fixed positioning）：固定定位是相对于浏览器窗口的位置进行定位。按钮将始终保持在视口的相同位置，不会随页面滚动而移动。*/
   right: 10px;
   bottom: 30px;
+}
 }
