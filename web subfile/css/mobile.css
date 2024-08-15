@@ -26,7 +26,7 @@
     justify-content: flex-start; /* 使内容从顶部开始排列 */
     align-items: center;
     height: 100%;
-    padding-top: 10%; /* 调整顶部间距，使内容从顶部向下开始 */
+    padding-top: 20%; /* 调整顶部间距，使内容从顶部向下开始 */
     position: relative;
     z-index: 2;
   }
@@ -37,7 +37,7 @@
     text-align: center;
     -webkit-animation: ani 5s ease-in-out infinite;
     animation: ani 5s ease-in-out infinite;
-    margin: 10px 0; /* 统一的上下间距 */
+    margin: 20px 0; /* 统一的上下间距 */
   }
 
   /* 动画效果 */
