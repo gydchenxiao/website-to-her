@@ -1,15 +1,21 @@
-function randomRange(min, max) {
-  return Math.random() * (max - min) + min;
-}
+class Sakura {
+  constructor() {
+    this.reset();
+  }
 
-function createSakura() {
-  this.x = randomRange(0, window.innerWidth);
-  this.y = randomRange(-200, -50);
-  this.speed = randomRange(0.3, 1);
-  this.angle = randomRange(0, Math.PI * 2);
-  this.size = randomRange(3, 7);
+  reset() {
+    this.x = Sakura.randomRange(0, window.innerWidth);
+    this.y = Sakura.randomRange(-200, -50);
+    this.speed = Sakura.randomRange(0.3, 1);
+    this.angle = Sakura.randomRange(0, Math.PI * 2);
+    this.size = Sakura.randomRange(3, 7);
+  }
 
-  this.draw = function(cxt) {
+  static randomRange(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  draw(cxt) {
     cxt.save();
     cxt.translate(this.x, this.y);
     cxt.rotate(this.angle);
@@ -24,58 +30,48 @@ function createSakura() {
     cxt.closePath();
 
     // 应用颜色渐变
-    var gradient = cxt.createLinearGradient(0, 0, 0, -this.size * 10);
+    const gradient = cxt.createLinearGradient(0, 0, 0, -this.size * 10);
     gradient.addColorStop(0, "#FFB6C1");
     gradient.addColorStop(1, "rgba(255, 182, 193, 0)");
     cxt.fillStyle = gradient;
     cxt.fill();
 
     cxt.restore();
-  };
+  }
 
-  this.update = function() {
+  update() {
     this.y += this.speed;
     if (this.y > window.innerHeight + 100) {
-      this.y = randomRange(-200, -50);
-      this.x = randomRange(0, window.innerWidth);
-      this.speed = randomRange(0.3, 1);
-      this.angle = randomRange(0, Math.PI * 2);
+      this.reset();
     }
-  };
+  }
 }
 
 function startSakura() {
-  var canvas = document.getElementById("canvas");
+  const canvas = document.getElementById("canvas");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  var cxt = canvas.getContext("2d");
+  const cxt = canvas.getContext("2d");
 
-  var sakuras = [];
-  for (var i = 0; i < 100; i++) {
-    sakuras.push(new createSakura());
-  }
+  const sakuras = Array.from({ length: 100 }, () => new Sakura());
 
   function draw() {
     requestAnimationFrame(draw);
     cxt.clearRect(0, 0, canvas.width, canvas.height);
 
-    for (var i = 0; i < sakuras.length; i++) {
-      sakuras[i].update();
-      sakuras[i].draw(cxt);
+    for (const sakura of sakuras) {
+      sakura.update();
+      sakura.draw(cxt);
     }
   }
 
   draw();
 }
 
-window.onload = function() {
-  startSakura();
-};
+window.onload = startSakura;
 
 document.getElementById("lastPageButton").addEventListener("click", function() {
-    
-    window.location.href = "./blessing.html";// 当按钮被点击时，导航到指定的HTML文件
+  window.location.href = "./blessing.html"; // 当按钮被点击时，导航到指定的HTML文件
 });
-
 
 
