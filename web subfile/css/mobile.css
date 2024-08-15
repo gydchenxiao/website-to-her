@@ -37,7 +37,7 @@
     text-align: center;
     -webkit-animation: ani 5s ease-in-out infinite;
     animation: ani 5s ease-in-out infinite;
-    margin: 30px 0; /* 统一的上下间距 */
+    margin: 20px 0; /* 统一的上下间距 */
     font-weight: bolder;
   }
 
