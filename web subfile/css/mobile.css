@@ -1,15 +1,13 @@
 @media only screen and (max-width: 768px) {
-  html,
+html,
 body {
   margin: 0;
   padding: 0;
   overflow: hidden; /* 阻止页面出现滚动条 */
   width: 100%;
   height: 100%;
-  background-image: url("https://pic.imgdb.cn/item/66bdf6a4d9c307b7e98ef350.jpg"); /* 更换为你的图片路径, ..是上一级目录 */
+  background-image: url("https://pic.imgdb.cn/item/66bdf6a4d9c307b7e98ef350.jpg"); 
   background-size: cover; /* 图片覆盖整个容器 */
-  background-position: center; /* 图片居中显示 */
-  background-repeat: no-repeat; /* 确保图片不重复 */
 }
 
 #canvas {
@@ -88,14 +86,4 @@ body {
   }
 }
 
-#lastPageButton {
-  background-color: rgba(249, 127, 147, 0.645);
-  color: white;
-  padding: 10px 32px;
-  border: none;
-  border-radius: 10px;
-  position: fixed; /*固定定位（fixed positioning）：固定定位是相对于浏览器窗口的位置进行定位。按钮将始终保持在视口的相同位置，不会随页面滚动而移动。*/
-  right: 10px;
-  bottom: 30px;
-}
 }
