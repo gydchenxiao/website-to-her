@@ -68,4 +68,6 @@ function startSakura() {
   draw();
 }
 
+window.onload = startSakura;
+
 console.log("gudong likes chenxiao a little bit");
