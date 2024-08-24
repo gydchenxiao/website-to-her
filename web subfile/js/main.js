@@ -68,10 +68,4 @@ function startSakura() {
   draw();
 }
 
-window.onload = startSakura;
-
-document.getElementById("lastPageButton").addEventListener("click", function() {
-  window.location.href = "./blessing.html"; // 当按钮被点击时，导航到指定的HTML文件
-});
-
 console.log("gudong likes chenxiao a little bit");
