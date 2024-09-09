@@ -10,6 +10,7 @@ body {
   background-size: cover; /* 图片覆盖整个容器 */
   background-position: center; /* 图片居中显示 */
   background-repeat: no-repeat; /* 确保图片不重复 */
+  background-attachment: fixed;
 }
 
 #canvas {
