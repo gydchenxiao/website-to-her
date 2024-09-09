@@ -1,17 +1,19 @@
 @media only screen and (min-width: 769px) {
-  body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    /* 背景图片尺寸覆盖整个屏幕 */
-    background-image: url("https://pic.imgdb.cn/item/66adfcc8d9c307b7e9a68764.png");
-    /* 设置初始背景图片 */
-    overflow:hidden;
-    background-position: center; 
-    background-repeat: no-repeat;
-  }
+    overflow: hidden; /* 避免滚动条出现 */
+}
+
+body {
+    background-image: url("https://pic.imgdb.cn/item/66adfcc8d9c307b7e9a68764.png"); /* 设置初始背景图片 */
+    background-size: cover; /* 背景图像将始终覆盖整个页面 */
+    background-position: center; /* 背景居中 */
+    background-repeat: no-repeat; /* 背景不重复 */
+    background-attachment: fixed; /* 背景固定 */
+}
 
   #canvas {
   display: block;
