@@ -10,6 +10,7 @@
     /* 设置初始背景图片 */
     overflow:hidden;
     background-position: center; 
+    background-repeat: no-repeat;
   }
 
     h1 {
