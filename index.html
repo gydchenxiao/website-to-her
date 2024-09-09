@@ -69,12 +69,14 @@
         "url('https://s2.loli.net/2024/07/17/lirZHUjmLW5T6gM.webp')",
       ];
       
-      var currentIndex = 0;
-      function changeBackgroundImage() {
-       var bgImages = window.innerWidth > 600 ? bgImagesDesktop : bgImagesMobile;
-       currentIndex = (currentIndex + 1) % bgImages.length;
-       document.body.style.backgroundImage = bgImages[currentIndex];
-  }
+function changeBackgroundImage() {
+    var bgImages = window.innerWidth > 600 ? bgImagesDesktop : bgImagesMobile;
+    currentIndex = (currentIndex + 1) % bgImages.length;
+    document.body.style.backgroundImage = bgImages[currentIndex];
+    document.body.style.backgroundSize = "cover"; // 确保背景覆盖
+    document.body.style.backgroundPosition = "center"; // 居中显示
+}
+
       // 给ID为changeBg的元素绑定点击事件
       document
         .getElementById("changeBg")
