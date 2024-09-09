@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,26 +17,26 @@
 <body>
   <h1>Wish Chen xiao no worries every day sincerely</h1>
   <br />
-  
-    <div class="container2" title="对不起,陈晓,我不应该搞邮件轰炸的。">
-        <div class="content">
-          <p>
-            <span id="first-line">"我希望陈晓你每天可以开开心心"</span>
-            <br />
-            <span id="second-line">"我的告别,也许明年就不在学校了"</span>
-            <br />
-            <span id="third-line">"再也不会打扰你了,只是对你有一些好感"</span>
-            <br />
-            <span>"上次邮件轰炸我先拿我自己邮箱做的试验"</span>
-            <br />
-            <span>"代理软件和我自建的节点给你用感觉挺好"</span>
-            <br />
-            <span id="sixth-line">"我会改正身上的缺点,以后不会烦人和恼怒"</span>
-            <br />
-            <span id="last-line">"人生若只如初见，何事悲风秋画扇"</span>
-          </p>
-        </div>
+
+  <div class="container2" title="对不起,陈晓,我不应该搞邮件轰炸的。">
+    <div class="content">
+      <p>
+        <span id="first-line">"我希望陈晓你每天可以开开心心"</span>
+        <br />
+        <span id="second-line">"我的告别,也许明年就不在学校了"</span>
+        <br />
+        <span id="third-line">"再也不会打扰你了,只是对你有一些好感"</span>
+        <br />
+        <span>"上次邮件轰炸我先拿我自己邮箱做的试验"</span>
+        <br />
+        <span>"代理软件和我自建的节点给你用感觉挺好"</span>
+        <br />
+        <span id="sixth-line">"我会改正身上的缺点,以后不会烦人和恼怒"</span>
+        <br />
+        <span id="last-line">"人生若只如初见，何事悲风秋画扇"</span>
+      </p>
     </div>
+  </div>
 
   <br />
 
@@ -68,21 +69,23 @@
         "url('https://s2.loli.net/2024/07/17/3zjLkTR1Uf2t9qp.webp')",
         "url('https://s2.loli.net/2024/07/17/lirZHUjmLW5T6gM.webp')",
       ];
-      
-function changeBackgroundImage() {
-    var bgImages = window.innerWidth > 600 ? bgImagesDesktop : bgImagesMobile;
-    currentIndex = (currentIndex + 1) % bgImages.length;
-    document.body.style.backgroundImage = bgImages[currentIndex];
-    document.body.style.backgroundSize = "cover"; // 确保背景覆盖
-    document.body.style.backgroundPosition = "center"; // 居中显示
-}
+
+      var currentIndex = 0;
+
+      function changeBackgroundImage() {
+        var bgImages = window.innerWidth > 600 ? bgImagesDesktop : bgImagesMobile;
+        currentIndex = (currentIndex + 1) % bgImages.length;
+        document.body.style.backgroundImage = bgImages[currentIndex];
+        document.body.style.backgroundSize = "cover"; // 确保背景覆盖
+        document.body.style.backgroundPosition = "center"; // 居中显示
+        document.body.style.backgroundAttachment = "fixed";
+      }
 
       // 给ID为changeBg的元素绑定点击事件
-      document
-        .getElementById("changeBg")
-        .addEventListener("click", changeBackgroundImage);
+      document.getElementById("changeBg").addEventListener("click", changeBackgroundImage);
     });
   </script>
+
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/APlayer.min.js"></script>
   <script src="./js/music.js"></script>
