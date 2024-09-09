@@ -28,7 +28,7 @@ body {
   text-align: center;
   position: relative;
   top: 40px;
-  -webkit-animation: ani 5s ease-in-out infinite;
+  -webkit-animation: ani 4s ease-in-out infinite;
 }
 
 .text2 {
@@ -37,7 +37,7 @@ body {
   text-align: center;
   position: relative;
   top: 80px;
-  -webkit-animation: ani 5s ease-in-out infinite;
+  -webkit-animation: ani 4s ease-in-out infinite;
 }
 
 .text3 {
@@ -46,7 +46,7 @@ body {
   text-align: center;
   position: relative;
   top: 120px;
-  -webkit-animation: ani 5s ease-in-out infinite;
+  -webkit-animation: ani 4s ease-in-out infinite;
 }
 
 .text4 {
@@ -55,7 +55,7 @@ body {
   text-align: center;
   position: relative;
   top: 160px;
-  -webkit-animation: ani 5s ease-in-out infinite;
+  -webkit-animation: ani 4s ease-in-out infinite;
 }
 
 .text5{
@@ -64,7 +64,7 @@ body {
   text-align: center;
   position: relative;
   top: 200px;
-  -webkit-animation: ani 5s ease-in-out infinite;
+  -webkit-animation: ani 4s ease-in-out infinite;
 }
 
 .text6 {
@@ -73,7 +73,7 @@ body {
   text-align: center;
   position: relative;
   top: 240px;
-  -webkit-animation: ani 5s ease-in-out infinite;
+  -webkit-animation: ani 4s ease-in-out infinite;
 }
 /*过渡动画*/
 @keyframes ani {
