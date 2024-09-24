@@ -38,6 +38,7 @@
     -webkit-animation: ani 5s ease-in-out infinite;
     animation: ani 5s ease-in-out infinite;
     margin: 20px 0; /* 统一的上下间距 */
+    font-weight: bold;
   }
 
   /* 动画效果 */
