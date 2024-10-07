@@ -7,6 +7,8 @@
     <link rel="icon" href="./img/chenxiaoQQ.jpg" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
   </head>
   <body>
   <div class="text-container">
@@ -39,9 +41,41 @@
       </p>
     </div>
   </div>
-
+    
+    <div id='aplayer'></div>
+    
     <canvas id="canvas"></canvas>
     <script type="text/javascript" src="./js/main.js"></script>
-    
+    <script>
+      
+    var ap = new APlayer
+    ({
+        element: document.getElementById('aplayer'),
+        showlrc: false,
+        fixed: true,
+        mini: true,
+        audio: [
+            {
+              name: "恶作剧",
+              artist: "王蓝茵",
+              url: "https://od.lk/s/OThfNDAyOTcwNjRf/mischief.mp3",
+              cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
+            },
+            {
+              name: "안녕 Goodbye",
+              artist: "DIA",
+              url: "https://music.163.com/song/media/outer/url?id=485347116.mp3",
+              cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
+            },
+            {
+             name: "泡沫",
+             artist: "邓紫棋",
+             url: "https://od.lk/s/OThfMzk5NTIwMzVf/paomo.mp3",
+             cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
+            },
+        ]
+    });
+    ap.init();
+</script>
   </body>
 </html>
