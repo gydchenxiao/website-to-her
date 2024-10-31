@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>很高兴遇见你,陈晓</title>
-    <link rel="icon" href="./img/chenxiaoQQ.jpg" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="stylesheet" href="./css/APlayer.min.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>很高兴遇见你,陈晓</title>
+  <link rel="icon" href="./img/chenxiaoQQ.jpg" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="stylesheet" href="./css/APlayer.min.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
   <div class="text-container">
-    
+
     <div class="text1">
       <p>如果樱花掉落的速度是每秒5厘米,那么两颗心需要多久才可以靠近</p>
     </div>
@@ -25,13 +28,14 @@
     </div>
     <div class="text4">
       <p>
-        I don't know if we each have a destiny, or if we're all just floating around accidental-like on a breeze,
-        <br/><span class="centered-line">but I think maybe it's both.Maybe both is happening at the same time.</span>
+        I don't know if we each have a destiny,<span id="text7">or if we're all just floating around accidental-like on
+          a breeze,</span>
+        <br /><span class="centered-line">but I think maybe it's both.Maybe both is happening at the same time.</span>
       </p>
     </div>
     <div class="text5">
       <p>
-        I sometimes miss you,Chenxiao.If you need help,I will not be far away.
+        I sometimes miss you,Chenxiao.But forgot the time.
       </p>
     </div>
     <div class="text6">
@@ -40,51 +44,57 @@
       </p>
     </div>
   </div>
-    
-    <div id='aplayer'></div>
-    
-    <canvas id="canvas"></canvas>
-    <script src="./js/APlayer.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script>
-      
+
+  <div id='aplayer'></div>
+
+  <canvas id="canvas"></canvas>
+
+<!--   <a href="vless.html" target="_blank" class="arrow-btn"> -->
+    <i class="fas fa-arrow-right">next</i>
+<!-- </a> -->
+
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script src="./js/APlayer.min.js"></script>
+  <script>
+
     var ap = new APlayer
-    ({
+      ({
         element: document.getElementById('aplayer'),
         showlrc: false,
         fixed: true,
         mini: true,
         audio: [
-           {
-              name: "안녕 Goodbye",
-              artist: "DIA",
-              url: "https://music.163.com/song/media/outer/url?id=485347116.mp3",
-              cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
-            },
-           {
-              name: "喜欢你",
-              artist: "邓紫棋",
-              url: "https://music.163.com/song/media/outer/url?id=28949444.mp3",
-              cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
-            },
-            {
-              name: "恶作剧",
-              artist: "王蓝茵",
-              url: "https://od.lk/s/OThfNDAyOTcwNjRf/mischief.mp3",
-              cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
-            },
-            {
-             name: "泡沫",
-             artist: "邓紫棋",
-             url: "https://od.lk/s/OThfMzk5NTIwMzVf/paomo.mp3",
-             cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
-            },
+          {
+            name: "안녕 Goodbye",
+            artist: "DIA",
+            url: "https://music.163.com/song/media/outer/url?id=485347116.mp3",
+            cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
+          },
+          {
+            name: "喜欢你",
+            artist: "邓紫棋",
+            url: "https://music.163.com/song/media/outer/url?id=28949444.mp3",
+            cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
+          },
+          {
+            name: "恶作剧",
+            artist: "王蓝茵",
+            url: "https://od.lk/s/OThfNDAyOTcwNjRf/mischief.mp3",
+            cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
+          },
+          {
+            name: "泡沫",
+            artist: "邓紫棋",
+            url: "https://od.lk/s/OThfMzk5NTIwMzVf/paomo.mp3",
+            cover: "https://pic.imgdb.cn/item/66b4d81ed9c307b7e9509a33.jpg",
+          },
         ]
+      });
+
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault(); // 阻止默认事件
     });
-      
-      document.addEventListener('contextmenu', function (event) {
-            event.preventDefault(); // 阻止默认事件
-        });
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
