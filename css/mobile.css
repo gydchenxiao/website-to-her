@@ -4,7 +4,6 @@
     /* 背景图片尺寸覆盖整个屏幕 */
     background-image: url("https://pic.imgdb.cn/item/66adfd0cd9c307b7e9a6bd94.jpg");
     /* 设置初始背景图片 */
-     overflow:hidden;
   }
 
   h1 {
