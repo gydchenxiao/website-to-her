@@ -12,7 +12,8 @@ body {
   background-size: cover; /* 图片覆盖整个容器 */
   background-position: center; /* 图片居中显示 */
   background-repeat: no-repeat; /* 确保图片不重复 */
-  background-attachment: fixed;
+  background-attachment: fixed;  /*确保图片固定*/
+  cursor: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHZpZXdCb3g9IjAgMCAyIDIiPjxjaXJjbGUgY3g9IjEiIGN5PSIxIiByPSIxIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==') 1 1, auto; /* 自定义光标为白色小点 */
 }
   
 #canvas {
