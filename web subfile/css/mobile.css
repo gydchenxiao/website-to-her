@@ -21,39 +21,57 @@
     /* 使用绝对定位让canvas覆盖在背景图片上 */
     top: 0;
     left: 0;
-    z-index: 1;
-    /* 确保canvas在最上层 */
+    z-index: 1;/* 确保canvas在最上层 */
   }
 
+/* 
   .text-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* 使内容从顶部开始排列 */
+    justify-content: flex-start;   使内容从顶部开始排列 
     align-items: center;
     height: 100%;
-    padding-top: 20%;
-    /* 调整顶部间距，使内容从顶部向下开始 */
+    padding-top: 20%;  
     position: relative;
     z-index: 2;
-  }
+  } */
 
-  .text1,
-  .text2,
-  .text3 {
-    font-size: 2.8vw;
-    /* 使用相对单位调整字体大小 */
+  .text1 {
+    position:relative;
+    top:10%;
+    font-size: 2.8vw;/* 使用相对单位调整字体大小 */
     color: whitesmoke;
     text-align: center;
     -webkit-animation: ani 5s ease-in-out infinite;
     animation: ani 5s ease-in-out infinite;
-    margin: 10px 0;
-    /* 统一的上下间距 */
+    font-weight: 500;
+  }
+
+  .text2 {
+    position:relative;
+    top:13%;
+    font-size: 2.8vw;/* 使用相对单位调整字体大小 */
+    color: whitesmoke;
+    text-align: center;
+    -webkit-animation: ani 5s ease-in-out infinite;
+    animation: ani 5s ease-in-out infinite;
+    font-weight: 500;
+  }
+
+  .text3 {
+    position:relative;
+    top:16%;
+    font-size: 2.8vw;/* 使用相对单位调整字体大小 */
+    color: whitesmoke;
+    text-align: center;
+    -webkit-animation: ani 5s ease-in-out infinite;
+    animation: ani 5s ease-in-out infinite;
     font-weight: 500;
   }
 
   .text4 {
-    top: 55%;
+    position:relative;
+    top:47%;
     font-size: 2.8vw;
     color: white;
     text-align: center;
@@ -67,7 +85,8 @@
   }
 
   .text5 {
-    margin-top: 10px; 
+    position:relative;
+    top: 50%; 
     font-size: 2.8vw;
     color: white;
     text-align: center;
@@ -77,7 +96,8 @@
 }
 
 .text6 {
-    margin-top: 10px;
+    position:relative;
+    top: 53%;
     font-size: 2.8vw;
     color: white;
     text-align: center;
