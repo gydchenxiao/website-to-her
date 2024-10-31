@@ -38,7 +38,7 @@
 
   .text1 {
     position:relative;
-    top:10%;
+    top:8%;
     font-size: 2.8vw;/* 使用相对单位调整字体大小 */
     color: whitesmoke;
     text-align: center;
@@ -49,7 +49,7 @@
 
   .text2 {
     position:relative;
-    top:13%;
+    top:11%;
     font-size: 2.8vw;/* 使用相对单位调整字体大小 */
     color: whitesmoke;
     text-align: center;
@@ -60,7 +60,7 @@
 
   .text3 {
     position:relative;
-    top:16%;
+    top:14%;
     font-size: 2.8vw;/* 使用相对单位调整字体大小 */
     color: whitesmoke;
     text-align: center;
@@ -120,4 +120,27 @@
       transform: scale(1);
     }
   }
+
+   .particle {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: none;
+    animation: explode 1s ease-out forwards;
+}
+
+/* 烟花粒子动画 */
+@keyframes explode {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--x), var(--y)) scale(0.5);
+    }
+}
+
 }
