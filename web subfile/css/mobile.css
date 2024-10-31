@@ -71,7 +71,7 @@
 
   .text4 {
     position:relative;
-    top:47%;
+    top:46%;
     font-size: 2.8vw;
     color: white;
     text-align: center;
@@ -86,8 +86,8 @@
 
   .text5 {
     position:relative;
-    top: 50%; 
-    font-size: 2.8vw;
+    top: 49%; 
+    font-size: 2.7vw;
     color: white;
     text-align: center;
     -webkit-animation: ani 5s ease-in-out infinite;
@@ -97,7 +97,7 @@
 
 .text6 {
     position:relative;
-    top: 53%;
+    top: 52%;
     font-size: 2.8vw;
     color: white;
     text-align: center;
