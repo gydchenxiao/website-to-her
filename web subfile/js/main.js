@@ -74,42 +74,38 @@ function startSakura() {
 
 window.onload = startSakura;
 
-// 生成烟花粒子
-function createFirework(event) {
-  const numParticles = 30; // 烟花粒子的数量
-  const particles = [];
+  function createFirework(event) {
+      const numParticles = 30;  // 烟花粒子的数量
+      const particles = [];
+      
+      for (let i = 0; i < numParticles; i++) {
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+        
+        // 随机颜色
+        particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        
+        // 粒子起始位置
+        particle.style.left = `${event.clientX}px`;
+        particle.style.top = `${event.clientY}px`;
+        
+        // 设置随机爆炸方向
+        const angle = Math.random() * 2 * Math.PI;
+        const distance = Math.random() * 240; // 爆炸范围
+        particle.style.setProperty("--x", `${Math.cos(angle) * distance}px`);
+        particle.style.setProperty("--y", `${Math.sin(angle) * distance}px`);
+        
+        document.body.appendChild(particle);
+        particles.push(particle);
+      }
 
-  // 设置粒子位置和动画效果
-  for (let i = 0; i < numParticles; i++) {
-    const particle = document.createElement("div");
-    particle.classList.add("particle");
+      setTimeout(() => {
+        particles.forEach(particle => {
+          particle.remove();
+        });
+      }, 1000); // 与动画时长一致
+    }
 
-    // 随机颜色
-    particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-
-    // 粒子起始位置
-    particle.style.left = `${event.clientX}px`;
-    particle.style.top = `${event.clientY}px`;
-
-    // 设置随机爆炸方向
-    const angle = Math.random() * 2 * Math.PI;
-    const distance = Math.random() * 200;
-    particle.style.setProperty("--x", `${Math.cos(angle) * distance}px`);
-    particle.style.setProperty("--y", `${Math.sin(angle) * distance}px`);
-
-    // 将粒子添加到文档
-    document.body.appendChild(particle);
-    particles.push(particle);
-  }
-
-  // 移除动画完成的粒子
-  setTimeout(() => {
-    particles.forEach((particle) => {
-      particle.remove();
-    });
-  }, 1000); // 与动画时长一致
-}
-
-// 添加点击事件监听器
-document.addEventListener("click", createFirework);
+    // 添加点击事件监听器
+    document.addEventListener("click", createFirework);
 console.log("gudong likes chenxiao a little bit");
