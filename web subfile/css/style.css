@@ -1,4 +1,8 @@
 @media only screen and (min-width:769px) {
+    html, body {
+        overflow: hidden;
+        height: 100%;
+    }
     .background-layer {
         position: fixed;
         top: 0;
@@ -10,8 +14,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        z-index: -1;
-        /* 让背景层位于其他内容之下 */
+        z-index: -1;/* 让背景层位于其他内容之下 */
+        overflow-y: scroll; /* 背景层允许滚动，但不显示滚动条 */
     }
 
 
