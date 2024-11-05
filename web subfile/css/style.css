@@ -1,153 +1,129 @@
-@media only screen and (min-width:769px) { 
-  html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-  body {
-    overflow: hidden; /* 阻止页面出现滚动条 */
-    background-image: url("https://pic.imgdb.cn/item/67051414d29ded1a8c92615b.jpg"); /* 更换为你的图片路径, ..是上一级目录 */
-    background-size: cover; /* 图片覆盖整个容器 */
-    background-position: center; /* 图片居中显示 */
-    background-repeat: no-repeat; /* 确保图片不重复 */
-    background-attachment: fixed;  /*确保图片固定*/
-    cursor: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDEwIj48Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0id2hpdGUiLz48L3N2Zz4=') 5 5, auto;/* 自定义光标为白色小点 */
-  }
-  
-  #canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute; /* 使用绝对定位让canvas覆盖在背景图片上 */
-    top: 0;
-    left: 0;
-    z-index: 1; /* 确保canvas在最上层 */
-  }
-
-  .text1 {
-    font-size: 20px;
-    color: blanchedalmond;
-    text-align: center;
-    position: relative;
-    top: 40px;
-    -webkit-animation: ani 4s ease-in-out infinite;
-    animation: ani 4s ease-in-out infinite;
-  }
-
-  .text2 {
-    font-size: 20px;
-    color: blanchedalmond;
-    text-align: center;
-    position: relative;
-    top: 80px;
-    -webkit-animation: ani 4s ease-in-out infinite;
-    animation: ani 4s ease-in-out infinite;
-  }
-
-  .text3 {
-    font-size: 20px;
-    color: blanchedalmond;
-    text-align: center;
-    position: relative;
-    top: 120px;
-    -webkit-animation: ani 4s ease-in-out infinite;
-    animation: ani 4s ease-in-out infinite;
-  }
-
-  .text4 {
-    font-size: 20px;
-    color: blanchedalmond;
-    text-align: center;
-    position: relative;
-    top: 160px;
-    -webkit-animation: ani 4s ease-in-out infinite;
-    animation: ani 4s ease-in-out infinite;
-  }
-
-  .text5 {
-    font-size: 20px;
-    color: blanchedalmond;
-    text-align: center;
-    position: relative;
-    top: 200px;
-    -webkit-animation: ani 4s ease-in-out infinite;
-    animation: ani 4s ease-in-out infinite;
-  }
-
-  .text6 {
-    font-size: 20px;
-    color: blanchedalmond;
-    text-align: center;
-    position: relative;
-    top: 240px;
-    -webkit-animation: ani 4s ease-in-out infinite;
-    animation: ani 4s ease-in-out infinite;
-  }
-
-  /*过渡动画*/
-  @keyframes ani {
-    0% {
-      transform: scale(1);
+@media only screen and (min-width:769px) {
+    .background-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://pic.imgdb.cn/item/67051414d29ded1a8c92615b.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: -1;
+        /* 让背景层位于其他内容之下 */
     }
-    50% {
-      transform: scale(1.11);
+
+
+    #canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /* 使用绝对定位让canvas覆盖在背景图片上 */
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* 确保canvas在最上层 */
     }
-    100% {
-      transform: scale(1);
+
+    .text1 {
+        font-size: 20px;
+        color: blanchedalmond;
+        text-align: center;
+        position: relative;
+        top: 40px;
+        -webkit-animation: ani 4s ease-in-out infinite;
+        animation: ani 4s ease-in-out infinite;
     }
-  }
 
-  #nextPageButton {
-    background-color: rgba(249, 127, 147, 0.645);
-    color: white;
-    padding: 10px 32px;
-    border: none;
-    border-radius: 10px;
-    position: fixed; /*固定定位（fixed positioning）：固定定位是相对于浏览器窗口的位置进行定位。按钮将始终保持在视口的相同位置，不会随页面滚动而移动。*/
-    right: 10px;
-    bottom: 30px;
-  }
-
-
-  .particle {
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: white;
-    pointer-events: none;
-    animation: explode 1s ease-out forwards;
-}
-
-/* 烟花粒子动画 */
-@keyframes explode {
-    0% {
-        opacity: 1;
-        transform: scale(1);
+    .text2 {
+        font-size: 20px;
+        color: blanchedalmond;
+        text-align: center;
+        position: relative;
+        top: 80px;
+        -webkit-animation: ani 4s ease-in-out infinite;
+        animation: ani 4s ease-in-out infinite;
     }
-    100% {
-        opacity: 0;
-        transform: translate(var(--x), var(--y)) scale(0.5);
-    }
-}
 
-.arrow-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: pink;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease;
-}
+    .text3 {
+        font-size: 20px;
+        color: blanchedalmond;
+        text-align: center;
+        position: relative;
+        top: 120px;
+        -webkit-animation: ani 4s ease-in-out infinite;
+        animation: ani 4s ease-in-out infinite;
+    }
+
+    .text4 {
+        font-size: 20px;
+        color: blanchedalmond;
+        text-align: center;
+        position: relative;
+        top: 160px;
+        -webkit-animation: ani 4s ease-in-out infinite;
+        animation: ani 4s ease-in-out infinite;
+    }
+
+    .text5 {
+        font-size: 20px;
+        color: blanchedalmond;
+        text-align: center;
+        position: relative;
+        top: 200px;
+        -webkit-animation: ani 4s ease-in-out infinite;
+        animation: ani 4s ease-in-out infinite;
+    }
+
+    .text6 {
+        font-size: 20px;
+        color: blanchedalmond;
+        text-align: center;
+        position: relative;
+        top: 240px;
+        -webkit-animation: ani 4s ease-in-out infinite;
+        animation: ani 4s ease-in-out infinite;
+    }
+
+    /*过渡动画*/
+    @keyframes ani {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.11);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+    .particle {
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: white;
+        pointer-events: none;
+        animation: explode 1s ease-out forwards;
+    }
+
+    /* 烟花粒子动画 */
+    @keyframes explode {
+        0% {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(var(--x), var(--y)) scale(0.5);
+        }
+    }
 
 }
