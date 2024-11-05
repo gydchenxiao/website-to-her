@@ -16,6 +16,7 @@
         background-attachment: fixed;
         z-index: -1;/* 让背景层位于其他内容之下 */
         overflow-y: scroll; /* 背景层允许滚动，但不显示滚动条 */
+        cursor: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDEwIj48Y2lyY2xlIGN4PSI1IiBjeT0iNSIgcj0iNSIgZmlsbD0id2hpdGUiLz48L3N2Zz4=') 5 5, auto;
     }
 
 
@@ -98,7 +99,7 @@
         }
 
         50% {
-            transform: scale(1.11);
+            transform: scale(1.12);
         }
 
         100% {
