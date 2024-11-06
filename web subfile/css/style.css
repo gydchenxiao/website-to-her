@@ -18,7 +18,6 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         z-index: -1;/* 让背景层位于其他内容之下 */
-        overflow-y: scroll; /* 背景层允许滚动，但不显示滚动条 */
     }
 
 
